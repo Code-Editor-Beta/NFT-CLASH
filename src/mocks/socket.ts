@@ -1,4 +1,4 @@
-import type { ActivityEvent } from '../types';
+// import type { ActivityEvent } from '../types'; // For future use
 import { generateMockActivity } from './seed';
 
 type WebSocketEventType = 'connection' | 'activity' | 'clan_update' | 'user_update';

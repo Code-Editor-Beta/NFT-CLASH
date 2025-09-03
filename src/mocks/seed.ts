@@ -108,8 +108,7 @@ export const generateMockClans = (): Clan[] => {
     
     // 💰 Calculate mint price and pool value
     const mintPrice = parseFloat((POOL_CONFIG.MIN_MINT_PRICE + (Math.random() * (POOL_CONFIG.MAX_MINT_PRICE - POOL_CONFIG.MIN_MINT_PRICE))).toFixed(3));
-    const poolBaseValue = POOL_CONFIG.BASE_POOL_VALUES[momentum];
-    const poolVariation = poolBaseValue * (0.8 + Math.random() * 0.4); // ±20% variation
+    // Pool value calculation for future use: POOL_CONFIG.BASE_POOL_VALUES[momentum] * (0.8 + Math.random() * 0.4)
     
     clans.push({
       // 🆔 Unique identifiers
